@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Tweet Now! 2: Multi-User</h1>
+
+  <% if @success.class == Twitter::Tweet %>
+    <h2> Congrats you have successfully submitted a tweet! </h2>
+  <% elsif @success != nil %>
+    <h2> Houston, we have a problem ... </h2>
+  <% end %>
+  <% if @access_token %>
+    <div id='lets_tweet'>
+      <form id='tweeting' action='/tweet' method='post'>
+        <input type='text' name='tweet'>
+        <input type='submit' value='Submit Tweet'>
+      </form>
+      </div>
+      <p>
+        <button><a href="/sign_out">Sign Out</a></button>
+      </p>
+    </div>
+  <% else %>
+    <button><a href="/sign_in">Sign In with Twitter</a></button>
+  <% end %>
+
+</div>
