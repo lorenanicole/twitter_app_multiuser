@@ -24,4 +24,5 @@ chromedriver.log
 .tddium*
 bin/
 .env
+config/twitter.yaml
 *.swp
