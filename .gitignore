@@ -1,6 +1,7 @@
 .bundle
 .DS_Store
 config/database.yml
+config/twitter.yaml
 db/*.sqlite3
 db/*.sqlite
 db/*.sqlite3-journal
@@ -24,5 +25,4 @@ chromedriver.log
 .tddium*
 bin/
 .env
-config/twitter.yaml
 *.swp
